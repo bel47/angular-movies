@@ -1,31 +1,9 @@
+<app-menu></app-menu>
+<!-- <app-rating (onRating)="handleRating($event)"></app-rating> -->
 
-<style>
-  :host {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    font-size: 14px;
-    color: #333;
-    box-sizing: border-box;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
-  .content {
-    display: flex;
-    margin: 82px auto 32px;
-    padding: 0 16px;
-    max-width: 960px;
-    flex-direction: column;
-    align-items: center;
-  }
-
-</style>
-
-<div class="content" role="main">
-   <span>{{ title }} app is running!</span>
-   <!-- <h1>{{dupulictaeNumber(6)}}</h1> -->
-   <h2>Movie Data</h2>
-</div>
-<div *ngFor="let movie of movies" class="movie-container">
-  <div>{{movie.title}}</div>
-  <div>{{movie.releaseDate | date:"dd-MMMM-YYYY" | uppercase}}</div>
-  <div>{{movie.price | currency:"ETB"}}</div>
+<div class="container">
+    <h2>In Theaters</h2>
+    <app-movies-list [movies]="moviesInTheaters"></app-movies-list>
+    <h2>Feature Releases</h2>
+    <app-movies-list [movies]="moviesFutureReleases"></app-movies-list>
 </div>
