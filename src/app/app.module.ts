@@ -9,6 +9,18 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material/material.module';
 import { MenuComponent } from './menu/menu.component';
 import { RatingComponent } from './utilities/rating/rating.component';
+import { HomeComponent } from './home/home.component';
+import { IndexGenresComponent } from './genres/index-genres/index-genres.component';
+import { CreateGenreComponent } from './genres/create-genre/create-genre.component';
+import { IndexActorsComponent } from './actors/index-actors/index-actors.component';
+import { CreateActorsComponent } from './actors/create-actors/create-actors.component';
+import { IndexMovieTheatersComponent } from './movie-theaters/index-movie-theaters/index-movie-theaters.component';
+import { CreateMovieTheatersComponent } from './movie-theaters/create-movie-theaters/create-movie-theaters.component';
+import { CreateMoviesComponent } from './movies/create-movies/create-movies.component';
+import { EditActorsComponent } from './actors/edit-actors/edit-actors.component';
+import { EditGenreComponent } from './genres/edit-genre/edit-genre.component';
+import { EditMovieTheatersComponent } from './movie-theaters/edit-movie-theaters/edit-movie-theaters.component';
+import { EditMoviesComponent } from './movies/edit-movies/edit-movies.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +28,19 @@ import { RatingComponent } from './utilities/rating/rating.component';
     MoviesListComponent,
     GenericListComponent,
     MenuComponent,
-    RatingComponent
+    RatingComponent,
+    HomeComponent,
+    IndexGenresComponent,
+    CreateGenreComponent,
+    IndexActorsComponent,
+    CreateActorsComponent,
+    IndexMovieTheatersComponent,
+    CreateMovieTheatersComponent,
+    CreateMoviesComponent,
+    EditActorsComponent,
+    EditGenreComponent,
+    EditMovieTheatersComponent,
+    EditMoviesComponent
   ],
   imports: [
     BrowserModule,
